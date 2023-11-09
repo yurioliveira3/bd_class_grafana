@@ -9,20 +9,17 @@ services:
     ports:
       - '3000:3000'
     networks:
-      custom-nw:
-    environment:
-      - GF_LOG_LEVEL=debug
+      - custom-nw
 
   postgres:
     container_name: postgresql
     restart: unless-stopped
     image: postgres
     volumes:
+      - './init-scripts/base.sql:/docker-entrypoint-initdb.d/base.sql'
       - 'data:/var/lib/postgresql/data'
-    #ports:
-    #  - "5-432:5432" #Neste contexto não se faz necessário expor a porta do PG
     networks:
-      custom-nw:
+      - custom-nw
     environment:
       POSTGRES_PASSWORD: 123456
 
