@@ -58,7 +58,7 @@ FROM
 GROUP BY 
     dc."day" 
 ORDER BY 
-    COUNT(0)
+    COUNT(0) DESC
 LIMIT 1
 ;
 
