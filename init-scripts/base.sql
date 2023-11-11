@@ -18,7 +18,8 @@ VALUES
 	('Goku', 'Son', '42303838000102', 1, 'goku@example.com'),
 	('Yugi', 'Muto', '11550446000106', 1, 'yugi@example.com'),
 	('Sakura', 'Haruno', '04942672000177', 1, 'sakura@example.com'),
-	('Vegeta', NULL, '60669819000', 2, 'vegeta@example.com')
+	('Vegeta', NULL, '60669819000', 2, 'vegeta@example.com'),
+	('Gohan', 'Son', '60459866000', 2, 'gohan@example.com')
 ;
 
 -- SELECT * FROM d_customers; 
